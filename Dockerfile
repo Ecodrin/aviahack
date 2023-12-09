@@ -24,7 +24,7 @@ RUN pip install --upgrade pip && pip install \
 #installing dependencies
 RUN pip install -r requirements.txt
 
-#running jupytel at init
+#running jupyter at init
 ENTRYPOINT jupyter lab \
     --notebook-dir=/app/ \
     --ip=0.0.0.0 \
