@@ -7,7 +7,6 @@ from data_loader import loader
 
 def main():
     loader()
-    shutil.move("data_wage", "../data_wage")
     enumerate()
     downenumerate()
 

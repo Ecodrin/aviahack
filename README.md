@@ -16,3 +16,5 @@ or via web-browser:
 ```http
 http://127.0.0.1:8080/lab
 ```
+
+`main.py` - main worker file

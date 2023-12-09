@@ -22,6 +22,7 @@ def loader():
     # unzip data.zip
     subprocess.run(["unzip", "data.zip"])
     os.remove("data.zip")
+    shutil.move("data_wage", "../data_wage")
 
 
 if __name__ == '__main__':
