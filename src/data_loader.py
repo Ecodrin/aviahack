@@ -13,8 +13,7 @@ def loader():
 
         return pk_request.json()['href']
 
-    yadisk_url = 'https://disk.yandex.ru/d/hYY_tmmyP3WaFg'
-    print(get_real_direct_link(yadisk_url))
+    yadisk_url = 'https://disk.yandex.ru/d/PWcT9QW177w8jg'
 
     # get data.zip
     urllib.request.urlretrieve(get_real_direct_link(yadisk_url), "data.zip")
@@ -23,6 +22,3 @@ def loader():
     subprocess.run(["unzip", "data.zip"])
     os.remove("data.zip")
 
-
-if __name__ == '__main__':
-    main()

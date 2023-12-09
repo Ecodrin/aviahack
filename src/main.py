@@ -7,7 +7,11 @@ from data_loader import loader
 
 def main():
     loader()
-    shutil.move("data_wage", "../data_wage")
+    #os.rename("data_wage", "data")
+    os.rename("data_step", "data")
+    #os.rename("data_car", "data")
+    #os.rename("agard", "data")
+    shutil.move("data", "../data")
     enumerate()
     downenumerate()
 
