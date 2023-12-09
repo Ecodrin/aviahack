@@ -1,4 +1,4 @@
-import openfoamparser as Ofpp
+import openfoamparser_mai as Ofpp
 import h5py 
 
 U = Ofpp.parse_internal_field('data_wage/high_dim/vel3.0/0.1/U')
