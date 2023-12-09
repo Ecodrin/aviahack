@@ -11,9 +11,10 @@ try:
         return pk_request.json()['href']
 
 
-    yadisk_url = 'https://disk.yandex.ru/i/PFrvE7-fpw2a3A'
+    yadisk_url = ''
 
-    urllib.request.urlretrieve(get_real_direct_link(yadisk_url), "inf_22_10_20_10.docx")
+    urllib.request.urlretrieve(get_real_direct_link(yadisk_url), "agard.zip")
+
 
 except Exception:
     pass
