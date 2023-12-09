@@ -7,7 +7,6 @@ RUN apt update && apt install -y \
     vim \
     git \
     gcc \
-    gfortran \
     make
 
 WORKDIR /app/
