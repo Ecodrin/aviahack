@@ -1,5 +1,6 @@
 import requests
 import urllib.request
+import subprocess
 
 API_ENDPOINT = 'https://cloud-api.yandex.net/v1/disk/public/resources/download?public_key={}'
 
@@ -9,6 +10,12 @@ def get_real_direct_link(sharing_link: str) -> str:
 
     return pk_request.json()['href']
 
-def dl_dataset(sharing_link: str, filename: str) -> str:
-    urllib.request.urlretrieve(get_real_direct_link(sharing_link), filename)
-    return "saved as: " + filename
+
+yadisk_url = 'https://disk.yandex.ru/d/hYY_tmmyP3WaFg'
+print(get_real_direct_link(yadisk_url))
+
+#get data.zip
+urllib.request.urlretrieve(get_real_direct_link(yadisk_url), "data.zip")
+
+#unzip data.zip
+subprocess.run(["unzip","data.zip"])
