@@ -2,7 +2,7 @@ import os
 import shutil
 
 
-def main():
+def enumerate():
     path = '/home/matvey/aviahack/data_wage'
     os.mkdir("/home/matvey/aviahack/upgrate_data_wage")
     for root, d_names, f_names in os.walk(path):
@@ -14,6 +14,3 @@ def main():
                 #вставить функцию
                 shutil.move(root + "/" + f_name, root.replace("data_wage", "upgrate_data_wage") + "/" + f_name)
 
-
-if __name__ == '__main__':
-    main()
