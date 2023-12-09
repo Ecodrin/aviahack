@@ -3,8 +3,8 @@ import shutil
 
 
 def enumerate():
-    path = '/home/matvey/aviahack/data_wage'
-    os.mkdir("/home/matvey/aviahack/upgrate_data_wage")
+    path = '../data_wage'
+    os.mkdir("../upgrate_data_wage")
     for root, d_names, f_names in os.walk(path):
         if d_names:
             for d_name in d_names:
@@ -12,5 +12,4 @@ def enumerate():
         if f_names:
             for f_name in f_names:
                 #вставить функцию
-                shutil.move(root + "/" + f_name, root.replace("data_wage", "upgrate_data_wage") + "/" + f_name)
-
+                shutil.copy(root + "/" + f_name, root.replace("data_wage", "upgrate_data_wage") + "/" + f_name)
