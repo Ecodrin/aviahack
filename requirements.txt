@@ -2,7 +2,7 @@
 #torchmetrics==1.2.1
 #torch-geometric==2.4.0
 numpy==1.25.2
-openfoamparser-mai==0.14
+openfoamparser==0.13
 trimesh==4.0.5
 pyvista==0.43.0
 pandas==2.1.4
